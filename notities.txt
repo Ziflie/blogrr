@@ -1,0 +1,15 @@
+wat moet ik leren?:
+
+- data kunnen posten, wat je al een beetje hebt geleerd
+- je moet data kunnen lezen op je web app
+- data kunnen editen
+- data kunnen verwijderen
+- cloud functions moet je ook snappen, en maken 
+
+
+je moet snappen wat data collecties zijn, en data documenten
+
+waar kan ik dit leren?:
+
+- docs
+- geen fucking idee
