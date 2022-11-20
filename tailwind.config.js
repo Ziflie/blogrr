@@ -7,10 +7,13 @@ module.exports = {
   theme: {
     fontFamily: {
       Space: ["Space Grotesk", "sans-serif"],
+      Greek: ["Anton", "sans-serif"]
     },
     extend: {
       colors: {
         'Green': "#0ACF83",
+        'Purple': "#F4EFFD",
+        'Paars': "#9C6DF2"
       },
     },
   },

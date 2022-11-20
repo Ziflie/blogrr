@@ -8,8 +8,7 @@ import LogOut from "../components/AccountComponents/LogOutButton";
 import useFetchTexts from "../hooks/FetchText";
 import PostsLayout from "../components/FrontEndComponents/PostsLayout";
 import Header from "../components/FrontEndComponents/Header";
-import Hero from "../components/FrontEndComponents/Hero";
- 
+  
 
 
 export default function Home() {

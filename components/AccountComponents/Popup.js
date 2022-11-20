@@ -15,7 +15,7 @@ export default function Popup() {
 
   const closeHandler = () => {
     setVisible(false);
-    console.log("closed");
+     
   };
 
   async function submitHandler() {

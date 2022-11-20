@@ -19,7 +19,7 @@ export function AuthProvider({children}) {
 
 
     
-    function signup(email, password, FirstName, LastName, DateOfBirth, gender, userName ) {
+    function signup(email, password, FirstName, LastName, DateOfBirth, gender, userName, profilePicture ) {
         createUserWithEmailAndPassword(auth, email, password,).then(cred => {
              async function addingInfo(currentUser) {
              await setDoc(doc(db, "users", email), {
@@ -29,6 +29,7 @@ export function AuthProvider({children}) {
                 dateOfBirth: DateOfBirth,
                 UserName: userName,
                 Email: email,
+                profilepicture: profilePicture,
             })
            
            } 

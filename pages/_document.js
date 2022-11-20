@@ -13,7 +13,8 @@ export default function Document() {
           rel="stylesheet"
         />
        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet"/>
-      </Head>
+       <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+       </Head>
       <body>
         <Main />
         <NextScript />

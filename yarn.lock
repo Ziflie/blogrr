@@ -1790,6 +1790,13 @@
   dependencies:
     "esutils" "^2.0.2"
 
+"dom7@^4.0.4":
+  "integrity" "sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw=="
+  "resolved" "https://registry.npmjs.org/dom7/-/dom7-4.0.4.tgz"
+  "version" "4.0.4"
+  dependencies:
+    "ssr-window" "^4.0.0"
+
 "ecc-jsbn@~0.1.1":
   "integrity" "sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw=="
   "resolved" "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz"
@@ -3293,6 +3300,15 @@
     "lodash" "^4.17.4"
     "quill" "^1.3.7"
 
+"react-textarea-autosize@^8.4.0":
+  "integrity" "sha512-YrTFaEHLgJsi8sJVYHBzYn+mkP3prGkmP2DKb/tm0t7CLJY5t1Rxix8070LAKb0wby7bl/lf2EeHkuMihMZMwQ=="
+  "resolved" "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-8.4.0.tgz"
+  "version" "8.4.0"
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    "use-composed-ref" "^1.3.0"
+    "use-latest" "^1.2.1"
+
 "react@^16 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.3.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.8.0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
@@ -3524,6 +3540,11 @@
     "safer-buffer" "^2.0.2"
     "tweetnacl" "~0.14.0"
 
+"ssr-window@^4.0.0", "ssr-window@^4.0.2":
+  "integrity" "sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ=="
+  "resolved" "https://registry.npmjs.org/ssr-window/-/ssr-window-4.0.2.tgz"
+  "version" "4.0.2"
+
 "string_decoder@~1.1.1":
   "integrity" "sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg=="
   "resolved" "https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz"
@@ -3622,6 +3643,14 @@
   "integrity" "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
+
+"swiper@^8.4.4":
+  "integrity" "sha512-jA/8BfOZwT8PqPSnMX0TENZYitXEhNa7ZSNj1Diqh5LZyUJoBQaZcqAiPQ/PIg1+IPaRn/V8ZYVb0nxHMh51yw=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.4.4.tgz"
+  "version" "8.4.4"
+  dependencies:
+    "dom7" "^4.0.4"
+    "ssr-window" "^4.0.2"
 
 "tailwindcss@^3.1.8":
   "integrity" "sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g=="
@@ -3755,6 +3784,23 @@
   "version" "4.4.1"
   dependencies:
     "punycode" "^2.1.0"
+
+"use-composed-ref@^1.3.0":
+  "integrity" "sha512-GLMG0Jc/jiKov/3Ulid1wbv3r54K9HlMW29IWcDFPEqFkSO2nS0MuefWgMJpeHQ9YJeXDL3ZUF+P3jdXlZX/cQ=="
+  "resolved" "https://registry.npmjs.org/use-composed-ref/-/use-composed-ref-1.3.0.tgz"
+  "version" "1.3.0"
+
+"use-isomorphic-layout-effect@^1.1.1":
+  "integrity" "sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA=="
+  "resolved" "https://registry.npmjs.org/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.1.2.tgz"
+  "version" "1.1.2"
+
+"use-latest@^1.2.1":
+  "integrity" "sha512-xA+AVm/Wlg3e2P/JiItTziwS7FK92LWrDB0p+hgXloIMuVCeJJ8v6f0eeHyPZaJrM+usM1FkFfbNCrJGs8A/zw=="
+  "resolved" "https://registry.npmjs.org/use-latest/-/use-latest-1.2.1.tgz"
+  "version" "1.2.1"
+  dependencies:
+    "use-isomorphic-layout-effect" "^1.1.1"
 
 "use-sync-external-store@1.2.0":
   "integrity" "sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA=="

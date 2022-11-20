@@ -39,9 +39,9 @@ export default function Profile() {
     getUserData();
   }, [count]);
 
-  console.log(UserData)
+  
 
-  const { UserName, firstName, lastName } = UserData
+  const { UserName, firstName, lastName, profilepicture } = UserData
 
   //button function that logs out user
   function SubmitLogout() {
@@ -66,9 +66,9 @@ export default function Profile() {
           as="button"
           size="lg"
           color="#0ACF83"
-          name={UserName}
+          name={`@${UserName}`}
           description={fullName}
-          src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+          src={profilepicture}
         />
       </Dropdown.Trigger>
       <Dropdown.Menu color="primary" aria-label="User Actions">
@@ -76,7 +76,10 @@ export default function Profile() {
           <p>Signed in as</p>
           <p>{currentUser.email}</p>
         </Dropdown.Item>
-        <Dropdown.Item key="settings" withDivider>
+        <Dropdown.Item key="undefined" withDivider>
+          <Link href="/user/[id]" as={`/user/${currentUser.email}`}><a>My Profile</a></Link>
+        </Dropdown.Item>
+        <Dropdown.Item css={{}} key="settings" withDivider>
           <Link href="/myaccount"><a>My Account</a></Link>
         </Dropdown.Item>
          <Dropdown.Item key="team_settings">Notifications</Dropdown.Item>
