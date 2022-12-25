@@ -12,6 +12,7 @@ import {
   getDoc,
 } from "firebase/firestore";
 import {db} from "../../firebase"
+import AccountDetails from "./AccountDetails";
  
 export default function Profile() {
 
@@ -41,7 +42,7 @@ export default function Profile() {
 
   
 
-  const { UserName, firstName, lastName, profilepicture } = UserData
+  const { userName, firstName, lastName, profilePicture } = UserData
 
   //button function that logs out user
   function SubmitLogout() {
@@ -66,9 +67,9 @@ export default function Profile() {
           as="button"
           size="lg"
           color="#0ACF83"
-          name={`@${UserName}`}
+          name={`@${userName}`}
           description={fullName}
-          src={profilepicture}
+          src={profilePicture}
         />
       </Dropdown.Trigger>
       <Dropdown.Menu color="primary" aria-label="User Actions">
@@ -79,15 +80,8 @@ export default function Profile() {
         <Dropdown.Item key="undefined" withDivider>
           <Link href="/user/[id]" as={`/user/${currentUser.email}`}><a>My Profile</a></Link>
         </Dropdown.Item>
-        <Dropdown.Item css={{}} key="settings" withDivider>
-          <Link href="/myaccount"><a>My Account</a></Link>
-        </Dropdown.Item>
-         <Dropdown.Item key="team_settings">Notifications</Dropdown.Item>
-         
-         <Dropdown.Item css={{background: "#0ACF83"}} key="help_and_feedback" withDivider>
-           Tell us your LifeStory
-        </Dropdown.Item>
        
+        
         <Dropdown.Item withDivider>
           <button className="text-red-500" onClick={SubmitLogout}>log out</button>
         </Dropdown.Item>

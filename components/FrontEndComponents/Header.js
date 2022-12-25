@@ -10,6 +10,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Popup from "../AccountComponents/Popup";
 import Profile from "../AccountComponents/Profile";
+import Notification from "../AccountComponents/Notification";
+import AccountDetails from "../AccountComponents/AccountDetails"
 
 import { useAuth } from "../../context/AuthContext";
 import { Spacer, Grid } from "@nextui-org/react";
@@ -32,14 +34,17 @@ export default function Header() {
           Home
         </Navbar.Link>
         {currentUser && (
-          <Navbar.Link href="/create-blogpost">Create LS</Navbar.Link>
+          <Navbar.Link href="/create-blogpost">
+            <Button css={{ backgroundColor: "#0ACF83" }}>Create LS</Button>
+          </Navbar.Link>
         )}
+        <Navbar.Content>{currentUser && <Notification />}</Navbar.Content>
       </Navbar.Content>
       <Navbar.Content>
+      <Navbar.Content>{currentUser && <AccountDetails /> }</Navbar.Content>
         <Navbar.Link color="inherit">{currentUser && <Profile />}</Navbar.Link>
       </Navbar.Content>
+      
     </Navbar>
   );
 }
-
- 

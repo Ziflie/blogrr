@@ -27,7 +27,6 @@ import {
   query,
 } from "firebase/firestore";
 import { useRouter } from "next/router";
-import EditYourPageButton from "../../../components/FrontEndComponents/EditYourPageButton";
 import { v4 as uuidv4 } from "uuid";
 
 export async function getServerSideProps(props) {
@@ -94,13 +93,12 @@ export default function UserProfile(props) {
     getUserPosts();
   }, [count]);
 
-  const { UserName, firstName, lastName, profilepicture, Email } = Profile;
- 
+  const { UserName, firstName, lastName, profilePicture, Email } = Profile;
 
   return (
     <>
       <Header />
-      <EditYourPageButton />
+
       {loading && (
         <div className="grid grid-cols-1 ">
           <div className="pt-40 grid col-span-1">
@@ -112,10 +110,8 @@ export default function UserProfile(props) {
         // hobbies, relationship status,
         <div className="grid grid-cols-4  justify-center">
           <div
-            style={{
-              backgroundImage: `url(${profilepicture})`,
-            }}
-            className="  container mx-auto rounded-xl pb-96 pt-20 grid col-span-2 md:col-span-4 justify-center"
+            style={{ backgroundImage: `url(${profilePicture})` }}
+            className="container mx-auto rounded-xl pb-96 pt-20 grid col-span-2 md:col-span-4 justify-center"
           >
             <div className="grid grid-cols-2">
               <div className="grid justiy-center col-span-2">
@@ -125,7 +121,7 @@ export default function UserProfile(props) {
                     as="button"
                     size="xl"
                     color="#0ACF83"
-                    src={profilepicture}
+                    src={profilePicture}
                   />
                 </div>
               </div>
@@ -170,16 +166,16 @@ export default function UserProfile(props) {
                   contentLeft={
                     <svg
                       aria-hidden="true"
-                      class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                      className="w-5 h-5 text-gray-500 dark:text-gray-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                       ></path>
                     </svg>

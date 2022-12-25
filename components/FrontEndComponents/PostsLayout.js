@@ -8,6 +8,8 @@ import {
   addDoc,
   getDocs,
   getDoc,
+  orderBy, 
+  limit
 } from "firebase/firestore";
 import { db } from "../../firebase";
 import { useAuth } from "../../context/AuthContext";
@@ -34,8 +36,7 @@ export default function Hero() {
   const [loading, setLoading] = useState(true);
   const { currentUser, addUserToFirebase } = useAuth();
 
-  console.log(currentUser);
-
+ 
   useEffect(() => {
     async function getData() {
       const querySnapshot = await getDocs(collection(db, "posts"));
@@ -75,6 +76,10 @@ export default function Hero() {
       )}
       {!loading && (
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+              <h1 className="  text-black">
+                  Latest
+                  <span className="font-Space text-Green"> LifeStories</span>
+                </h1>
           <Input
             size="lg"
             onChange={event => {
@@ -86,16 +91,16 @@ export default function Hero() {
             contentLeft={
               <svg
                 aria-hidden="true"
-                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                className="w-5 h-5 text-gray-500 dark:text-gray-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 ></path>
               </svg>
@@ -118,7 +123,7 @@ export default function Hero() {
                   <a href="" className="group relative block h-96">
                     <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
-                    <div className="items-center justify-start relative flex h-full transform border-2 border-black bg-green-300 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                    <div key={info.slug} className="items-center justify-start relative flex h-full transform border-2 border-black bg-green-300 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                       <div className=" self-auto px-8 pb-8 transition-opacity group-hover:absolute group-hover:opacity-0">
                         <a>
                           <Avatar src={info.profilePicture} size="lg" />

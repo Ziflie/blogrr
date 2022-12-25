@@ -27,9 +27,9 @@ export function AuthProvider({children}) {
                 firstName: FirstName,
                 lastName: LastName,
                 dateOfBirth: DateOfBirth,
-                UserName: userName,
-                Email: email,
-                profilepicture: profilePicture,
+                userName: userName,
+                email: email,
+                profilePicture: profilePicture,
             })
            
            } 
@@ -56,13 +56,17 @@ export function AuthProvider({children}) {
         return unsubscribe
     }, [])
 
+
+ 
+
+
     const value = {
         currentUser,
         login,
         signup,
         logOut,
-        userInfo
-    }
+        userInfo,
+     }
 
 
     return (

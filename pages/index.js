@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
        <Head>
-        <title>Undefined</title>
+        <title>LifeStory</title>
         <meta name="description" content="Created by R.Meziani" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

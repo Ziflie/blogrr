@@ -39,7 +39,7 @@ export default function LogIn() {
         <div className="justify-center grid col-span-4 ">
           <h1 className="font-Space text-2xl">Log in</h1>
         </div>
-      
+
         <div className="justify-center grid col-span-4">
           <h1 className="text-xl font-Space">Email:</h1>
           <Input
@@ -87,16 +87,20 @@ export default function LogIn() {
           </svg>
         </div> */}
       </form>
-      <div className="pt-12 grid justify-center ">
-        <h1 className="font-Space text-black text-xl block xl:inline pt-3">
-          New to large?{" "}
+      <div className="pt-12 grid grid-cols-2">
+        <div className="grid col-span-2  justify-center">
+          <h1 className="justify-center font-Space text-black text-xl xl:inline pt-3">
+            New to large?{" "}
+          </h1>
+        </div>
+        <div className="grid col-span-2  justify-center">
           <Link href="/create-account">
-            <a className="font-Space text-blue-600 text-xl block xl:inline pl-1">
+            <a className="font-Space justify-center text-blue-600 text-xl xl:inline pl-1">
               {" "}
               Create an account!
             </a>
           </Link>
-        </h1>
+        </div>
       </div>
     </div>
   );

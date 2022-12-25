@@ -53,7 +53,7 @@ export default function CreateAccount() {
 
    return (
     <div className="container mx-auto ">
-      <form onSubmit={handleSubmit} className="grid grid-cols-4 gap-12">
+      <form onSubmit={handleSubmit} className="grid grid-cols-2 md:grid-cols-4 gap-12">
         <div className="pt-12">
           <Link href="/">
             <a className="font-Space font-bold text-blue-700 text-2xl">
@@ -61,13 +61,13 @@ export default function CreateAccount() {
             </a>
           </Link>
         </div>
-        <div className="pt-40 justify-center grid col-span-4 ">
+        <div className="pt-40 justify-center grid col-span-2 md:col-span-4 ">
           <h1 className="font-Space text-Green text-9xl block xl:inline">
             Large
           </h1>
         </div>
 
-        <div className="justify-end grid col-span-2">
+        <div className="  grid justify-center col-span-2 md:col-span-4">
           <h1 className="font-Space text-xl">What is your first name?</h1>
           <Input
             value={FirstName}
@@ -79,7 +79,7 @@ export default function CreateAccount() {
           />
         </div>
 
-        <div className="justify-start grid col-span-2">
+        <div className="grid justify-center col-span-2 md:col-span-4">
           <h1 className="font-Space text-xl">What is your last name?</h1>
           <Input
             value={LastName}
@@ -91,7 +91,7 @@ export default function CreateAccount() {
           />
         </div>
 
-        <div className=" justify-end grid col-span-2">
+        <div className=" grid justify-center col-span-2 md:col-span-4">
           <h1 className="font-Space text-xl">Date of birth?</h1>
           <Input
             onChange={e => setDateOfBirth(e.target.value)}
@@ -102,7 +102,7 @@ export default function CreateAccount() {
           />
         </div>
 
-        <div className="justify-start  grid col-span-2">
+        <div className="grid justify-center col-span-2 md:col-span-4">
           <h1 className="font-Space text-xl">Display name?</h1>
           <Input
             value={userName}
@@ -114,7 +114,7 @@ export default function CreateAccount() {
           />
         </div>
 
-        <div className="justify-end grid col-span-2">
+        <div className="grid justify-center col-span-2 md:col-span-4">
           <h1 className="font-Space text-xl">Email adress?</h1>
           <Input
             value={email}
@@ -126,7 +126,7 @@ export default function CreateAccount() {
           />
         </div>
 
-        <div className="justify-start grid col-span-2">
+        <div className="grid justify-center col-span-2 md:col-span-4">
           <h1 className="font-Space text-xl">
             Last but not least, your password?
           </h1>
@@ -141,7 +141,7 @@ export default function CreateAccount() {
           />
         </div>
 
-        <div className="justify-center grid col-span-4 ">
+        <div className="grid justify-center col-span-2 md:col-span-4 ">
           <Button
             size="lg"
             css={{ background: "#0ACF83" }}

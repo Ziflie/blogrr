@@ -6,9 +6,12 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
+    
     <NextUIProvider>
       <AuthProvider>
-        <Component {...pageProps} />
+       
+          <Component {...pageProps} />
+         
       </AuthProvider>
     </NextUIProvider>
   );
